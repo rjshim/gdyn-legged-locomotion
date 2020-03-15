@@ -8,6 +8,7 @@
 #include <termios.h>
 
 #include <ros/ros.h>
+#include <geometry_msgs/Twist.h>
 #include <sensor_msgs/Joy.h>
 
 #include "legged_robot_msgs/UICommand.h"
@@ -25,6 +26,7 @@ public:
 
 private:
   ros::NodeHandle _nodeHandle;
+  ros::Publisher _velPub;
   ros::Subscriber _joyCommandSub;
   ros::ServiceClient _uiCommandSrv;
 };

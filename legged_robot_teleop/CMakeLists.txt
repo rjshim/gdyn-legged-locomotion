@@ -7,6 +7,7 @@ add_compile_options(-std=c++11)
 find_package(catkin REQUIRED
   COMPONENTS
     roscpp
+    geometry_msgs
     legged_robot_msgs
 )
 
@@ -14,6 +15,7 @@ catkin_package(
   INCLUDE_DIRS include
   CATKIN_DEPENDS 
     roscpp
+    geometry_msgs
     legged_robot_msgs
 )
 
